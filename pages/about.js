@@ -18,11 +18,7 @@ export default function About() {
                     smoothMobile: true,
                     inertia: 0.75
                 });
-                console.log(scroll);
-
                 // scroll.init()
-
-                console.log(scroll)
 
                 // div following mouse
                 TweenMax.from(".cursor-follow", 2, {
@@ -76,18 +72,24 @@ export default function About() {
 
                 {/*about-section*/}
                 <div className="about__container" data-scroll-section="true">
-                    <p className="about__container-data" data-scroll={"true"}>Hey ! Nous sommes passionnés 🔥.<br/>Nous adorons
-                        faire des projets (créatifs). <span>D'abord, il y a
-                            <Link href="https://www.instagram.com/thibaultasseum/" target="_blank">Thibault</Link>.</span><br/>Culture
-                        Skate, Kurt Cobain, sapes maitrisées et une grande dose de spirituelle.
-                        Voilà notre homme.
-                        <br/><span>Ensuite, <Link href="https://www.instagram.com/keymonmusic/" target="_blank">Keymon</Link> : il s'interroge pour donner une maximum de sens à sa vie. <br/>Sa plume est le lampadaire de nos crises existencielles.</span><span><br/>Puis, <a
-                            href="https://www.instagram.com/iamcoolalexz/" target="_blank">Alex</a>, créateur de cyclopes et passionné par lézard autant que les humains.</span><br/>Voilà
-                        notre Team.</p>
-
-                    <p data-scroll={"true"}>Pour nous contacter =&gt; <span
-                        className="about__container-contact-link"><Link href="mailto:contact@kizco.xyz"
-                                                                     target="_blank">Envoyer un mail.</Link></span></p>
+                    <p className="about__container-data" data-scroll={"true"}>Hey ! Nous sommes passionnés 🔥.
+                        <br/>Nous adorons faire des projets (créatifs).
+                        <span>{` D'abord, il y a`}
+                            <a rel="noreferrer" target={"_blank"} href="https://www.instagram.com/thibaultasseum/">Thibault</a>.
+                        </span>
+                        <br/>Culture Skate, Kurt Cobain, sapes maitrisées et une grande dose de spirituel.
+                        <br/>Voilà notre homme.
+                        <br/><span>Ensuite, <a rel="noreferrer" href="https://www.instagram.com/keymonmusic/" target="_blank">Keymon</a>
+                            {` : il s'interroge pour donner une maximum de sens à sa vie.`}<br/>Sa plume est le lampadaire de nos crises existencielles.</span>
+                        <span>
+                            <br/>Puis, <a href="https://www.instagram.com/iamcoolalexz/" target="_blank" rel="noreferrer">Alex</a>, créateur de cyclopes et passionné par lézard autant que les humains.</span>
+                        <br/>Voilà notre Team.
+                    </p>
+                    <p data-scroll={"true"}>Pour nous contacter =&gt;
+                        <span className="about__container-contact-link">
+                            <a rel="noreferrer" href="mailto:contact@kizco.xyz" target="_blank">Envoyer un mail.</a>
+                        </span>
+                    </p>
                 </div>
 
                 <div className="cursor-follow"></div>
