@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import anime from "animejs"
-// import {gsap, Expo} from "gsap";
 import {useEffect} from "react";
 
 export default function Project() {

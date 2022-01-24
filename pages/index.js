@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
-import gsap from "gsap";
-// import * as HorizontalScroll from '../utils/horizontal-scroll'
 import {useEffect} from "react";
 
 export default function Home() {
@@ -62,22 +60,22 @@ export default function Home() {
           </div>
           <div className="container__item container__item-2">
             <h1 className="container__item-title">
-              <a href="project.html">Evasion</a>
+              <Link href="/project">Evasion</Link>
             </h1>
           </div>
           <div className="container__item container__item-3">
             <h1 className="container__item-title">
-              <a href="project.html">Alex Harez (dessins)</a>
+              <Link href="/project">Alex Harez (dessins)</Link>
             </h1>
           </div>
           <div className="container__item container__item-4">
             <h1 className="container__item-title">
-              <a href="project.html">Brutal</a>
+              <Link href="/project">Brutal</Link>
             </h1>
           </div>
           <div className="container__item container__item-5">
             <h1 className="container__item-title">
-              <a href="project.html">Mouthwash</a>
+              <Link href="/project">Mouthwash</Link>
             </h1>
           </div>
         </div>
